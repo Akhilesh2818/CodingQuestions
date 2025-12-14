@@ -5,9 +5,11 @@ import java.util.function.Supplier;
 
 public class OptionalClassEx {
     public static void main(String[] args) {
-        Optional<String> obj=Optional.of(null);
+        Optional<String> obj=Optional.of(
+                "akhilesh"
+        );
         obj.ifPresent(System.out::println);
         obj.ifPresentOrElse(System.out::println,()-> System.out.println("unkown"));
-        Supplier
+
     }
 }
